@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context=".Activity.TicketDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@drawable/blue_top_corner"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/world_half" />
+
+                <ImageView
+                    android:id="@+id/backBtnn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="46dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Ticket Details"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="@id/backBtnn"
+                    app:layout_constraintStart_toEndOf="@id/backBtnn"
+                    app:layout_constraintTop_toTopOf="@id/backBtnn"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="22sp"
+                android:layout_marginEnd="22sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/white_bg"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="16sp"
+                    android:layout_marginEnd="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="time"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@id/logo"
+                        app:layout_constraintStart_toStartOf="@id/logo"
+                        app:layout_constraintTop_toBottomOf="@id/logo"/>
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/logo"
+                        app:srcCompat="@drawable/line_airple_blue"/>
+
+                    <TextView
+                        android:id="@+id/fromTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/fromShortTxt"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv9" />
+
+                    <TextView
+                        android:id="@+id/fromShortTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                        app:layout_constraintEnd_toEndOf="@+id/fromTxt"
+                        app:layout_constraintTop_toBottomOf="@id/fromTxt"
+                        app:layout_constraintStart_toStartOf="@+id/fromTxt" />
+
+                    <TextView
+                        android:id="@+id/toTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="to"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toTopOf="@id/toShortText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                        app:layout_constraintTop_toBottomOf="@+id/tv9" />
+
+                    <TextView
+                        android:id="@+id/toShortText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="to"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                        app:layout_constraintEnd_toEndOf="@+id/toTxt"
+                        app:layout_constraintStart_toStartOf="@+id/toTxt"
+                        app:layout_constraintTop_toBottomOf="@+id/toTxt" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="From"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/fromSmallTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Date"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/dateTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/toSmallTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Time"
+                            android:textColor="@color/black" />
+
+                            <TextView
+                                android:id="@+id/timeTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/dash_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Class"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/classTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Passenger"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/passengerTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Airlines"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/airlinesTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Price"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/priceTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/scanImg"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/qrcode" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/dash_line" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/barcode" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/downloadTicketBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Download Ticket"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                style="@android:style/Widget"
+                android:background="@drawable/blue_bg"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

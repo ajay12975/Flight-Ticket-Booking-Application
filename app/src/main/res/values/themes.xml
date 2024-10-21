@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Animation for dialogs -->
+    <style
+        name="animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.TicketBookingApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your base theme here -->
+
+    </style>
+
+    <!-- Derived theme for your specific activity -->
+    <style name="Theme.TicketBookingApp" parent="Base.Theme.TicketBookingApp" />
+</resources>
